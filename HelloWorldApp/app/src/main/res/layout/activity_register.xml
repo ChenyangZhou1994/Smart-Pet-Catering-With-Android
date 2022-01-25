@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/text_username"
+        android:layout_alignBottom="@+id/text_username"
+        android:layout_toStartOf="@+id/text_username"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingBottom="17dp"
+        android:text="用户名："
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/text_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/email"
+        android:hint="请输入用户名"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="密码："
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingBottom="17dp"
+        android:layout_alignTop="@+id/text_password"
+        android:layout_toStartOf="@+id/text_username"
+        android:layout_alignBottom="@+id/text_password" />
+
+    <EditText
+        android:id="@+id/text_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/password"
+        android:hint="请输入密码"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/password_retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="重复密码："
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingBottom="17dp"
+        android:layout_alignBottom="@+id/text_password_retry"
+        android:layout_alignTop="@+id/text_password_retry" />
+
+    <EditText
+        android:id="@+id/text_password_retry"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_toEndOf="@+id/password_retry"
+        android:layout_marginTop="10dp"
+        android:hint="请再次输入密码" />
+
+    <TextView
+        android:id="@+id/telephone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="电话号码："
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingBottom="17dp"
+        android:layout_alignBottom="@+id/text_telephone"
+        android:layout_alignTop="@+id/text_telephone" />
+
+    <EditText
+        android:id="@+id/text_telephone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_retry"
+        android:layout_toEndOf="@+id/telephone"
+        android:layout_marginTop="10dp"
+        android:hint="请输入电话号码" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/text_email"
+        android:layout_alignBottom="@+id/text_email"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingBottom="17dp"
+        android:text="电子邮箱："
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/text_email"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/telephone"
+        android:layout_toEndOf="@+id/email"
+        android:layout_marginTop="10dp"
+        android:hint="请输入电子邮箱" />
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/text_age"
+        android:layout_alignBottom="@+id/text_age"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingBottom="17dp"
+        android:text="年龄："
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/text_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/age"
+        android:hint="请输入年龄"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="性别："
+        android:gravity="center"
+        android:maxLines="1"
+        android:layout_toStartOf="@+id/text_age"
+        android:layout_alignBottom="@+id/group_sex"
+        android:layout_alignTop="@+id/group_sex" />
+
+    <RadioGroup
+        android:id="@+id/group_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/age"
+        android:layout_toEndOf="@+id/sex"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentEnd="true">
+
+        <RadioButton
+            android:id="@+id/man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男" />
+
+        <RadioButton
+            android:id="@+id/woman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:text="女" />
+
+        <RadioButton
+            android:id="@+id/unknown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:checked="true"
+            android:text="未知" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/group_sex"
+        android:text="注册"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+</RelativeLayout>
